@@ -1,16 +1,16 @@
 import { React } from "react";
-const Card = ({image, name, resumen, link}) => {
+const Card = ({serie}) => {
    
     return (
               
         <div className="card" >
-        <img src={image} className="card-img-top" alt={name}/>
+        <img src={serie.poster} className="card-img-top" alt={serie.name}/>
         <div className="card-body">
-          <h5 className="card-title">{name}</h5>
+          <h5 className="card-title">{serie.name}</h5>
           <p className="card-text">
-          {resumen}
+          {serie.description}
           </p>
-          <a href={link} target="_blank"  className="btn btn-link">{link}</a>
+          <a href={serie.webpage} target="_blank"  className="btn btn-link">{serie.webpage}</a>
         </div>
       </div>
               
