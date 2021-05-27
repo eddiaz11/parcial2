@@ -1,11 +1,12 @@
 import { React } from "react";
 import Row from "./Row";
-const Table = ({series}) => {
+const Table = ({series, handleSerie}) => {
     
+   
     
     return (
         <div>
-        <table class="table table-striped">
+        <table className="table table-striped">
         <thead>
         <tr>
         <th scope="col">#</th>

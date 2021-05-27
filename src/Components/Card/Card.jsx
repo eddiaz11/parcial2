@@ -16,5 +16,6 @@ const Card = ({serie}) => {
               
         );
     };
+    
     export default Card;
     
