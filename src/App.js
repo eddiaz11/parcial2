@@ -3,7 +3,9 @@ import './App.css';
 import Table from "./Components/Table/Table";
 import Card from "./Components/Card/Card";
 
+
 import { React, useEffect, useState, useCallback } from "react";
+import Graphic from './Components/Graphic/Graphic';
 
 function App() {
   const [series, setSeries] = useState([]);
@@ -57,6 +59,11 @@ function App() {
     
     
     
+    </div>
+    <div className="row">
+      <div className="col">
+        <Graphic series={series}></Graphic>
+      </div>
     </div>
     
     </div>
