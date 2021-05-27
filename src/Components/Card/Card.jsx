@@ -10,12 +10,12 @@ const Card = ({serie}) => {
           <p className="card-text">
           {serie.description}
           </p>
-          <a href={serie.webpage} target="_blank"  className="btn btn-link">{serie.webpage}</a>
+          <a href={serie.webpage} target="_blank" rel="noreferrer"  className="btn btn-link">{serie.webpage}</a>
         </div>
       </div>
               
         );
     };
-    
+
     export default Card;
     

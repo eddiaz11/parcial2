@@ -19,7 +19,7 @@ const Table = ({series, handleSerie}) => {
         </thead>
         <tbody>
         { series && series.map((elem) => (
-            <Row key={elem.id} serieID={elem.id} name={elem.name} channel={elem.channel}  seasons={elem.seasons}  episodes={elem.episodes}  release={elem.release}></Row>
+            <Row key={elem.id} serie={elem} handleSerie={handleSerie}></Row>
             ))
             
         }

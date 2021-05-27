@@ -1,24 +1,24 @@
 import { React } from "react";
-const Row = ({serieID, name, channel, seasons, episodes, release}) => {
+const Row = ({serie, handleSerie}) => {
     return (
-               <tr>
+               <tr onClick={()=>{handleSerie(serie)}}>
                    <th scope="row">
-                        {serieID}
+                        {serie.id}
                    </th>
                    <td>
-                        {name}
+                        {serie.name}
                    </td>
                    <td>
-                        {channel}
+                        {serie.channel}
                    </td>
                    <td>
-                        {seasons}
+                        {serie.seasons}
                    </td>
                    <td>
-                        {episodes}
+                        {serie.episodes}
                    </td>
                    <td>
-                        {release}
+                        {serie.release}
                    </td>
                </tr>
         );

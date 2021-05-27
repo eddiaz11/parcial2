@@ -50,7 +50,7 @@ function App() {
     </div>
     {
       serie && 
-      <div className="col-sm">
+      <div className="col-sm-4">
         <Card serie={serie}></Card>
       </div>
     }
