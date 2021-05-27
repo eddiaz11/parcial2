@@ -1,4 +1,5 @@
 import { React } from "react";
+import { FormattedMessage } from "react-intl";
 import Row from "./Row";
 const Table = ({series, handleSerie}) => {
     
@@ -9,12 +10,24 @@ const Table = ({series, handleSerie}) => {
         <table className="table table-striped">
         <thead>
         <tr>
-        <th scope="col">#</th>
-        <th scope="col">Name</th>
-        <th scope="col">Channel</th>
-        <th scope="col">Seasons</th>
-        <th scope="col">Episodes</th>
-        <th scope="col">Release Date</th>
+        <th scope="col">
+      #
+        </th>
+        <th scope="col">
+        <FormattedMessage id="Name"/>
+        </th>
+        <th scope="col">
+        <FormattedMessage id="Channel"/>
+        </th>
+        <th scope="col">
+        <FormattedMessage id="Season"/>
+        </th>
+        <th scope="col">
+        <FormattedMessage id="Episodes"/>
+        </th>
+        <th scope="col">
+        <FormattedMessage id="Release Date"/>
+        </th>
         </tr>
         </thead>
         <tbody>

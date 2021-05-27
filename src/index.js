@@ -4,11 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
+import localeEsMessages from "./locales/es";
+import {IntlProvider} from 'react-intl';
 
 ReactDOM.render(
-  <React.StrictMode>
+  <IntlProvider locale="es-ES" messages={localeEsMessages}>
     <App />
-  </React.StrictMode>,
+  </IntlProvider>,
   document.getElementById('root')
 );
 serviceWorkerRegistration.unregister();
