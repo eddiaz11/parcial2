@@ -18,7 +18,7 @@ function App() {
         setSeries(res);
         localStorage.setItem("series", res);
       });
-    }, []
+    }, [setSeries]
     );
     const handleSerie=useCallback(
       (serie) => {
@@ -38,7 +38,7 @@ function App() {
  
 
     
-  }, [handleSeries, series]);
+  }, [handleSeries]);
   
   return (
     <div className="container p-3">
