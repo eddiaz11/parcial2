@@ -16,7 +16,7 @@ function App() {
       .then((res) => {
        
         setSeries(res);
-        localStorage.setItem("series", res);
+        localStorage.setItem("series", JSON.stringify(res));
       });
     }, [setSeries]
     );
@@ -31,7 +31,7 @@ function App() {
 
     if (!navigator.onLine) {
       if (localStorage.getItem("series") === null) setSeries("");
-      else setSeries(localStorage.getItem("series"));
+      else setSeries(localStorage.getItem("series").json());
     }else{
       handleSeries();
     }
